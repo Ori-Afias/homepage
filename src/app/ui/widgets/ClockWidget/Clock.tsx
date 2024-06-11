@@ -18,7 +18,7 @@ export function Clock({ onClick }: ClockProps) {
   return (
     <div
       onClick={onClick}
-      className='bg-slate-800 flex items-center justify-center flex-col h-full w-full cursor-pointer'
+      className='bg-gradient-to-tr from-slate-600 to-slate-400 flex items-center justify-center flex-col h-full w-full cursor-pointer'
     >
       <span className='text-sm text-white mb-4'>{displayDate}</span>
       <span className='text-3xl text-white'>{displayTime}</span>

@@ -1,6 +1,6 @@
 'use client';
 
-import { MouseEventHandler, useState } from 'react';
+import { MouseEventHandler, useEffect, useState } from 'react';
 
 interface ClockProps {
   onClick?: MouseEventHandler<HTMLDivElement>;
@@ -8,9 +8,13 @@ interface ClockProps {
 export function Clock({ onClick }: ClockProps) {
   const [date, setDate] = useState(new Date());
 
-  setInterval(() => {
-    setDate(new Date());
-  }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDate(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const displayDate = date.toLocaleDateString();
   const displayTime = date.toLocaleTimeString();

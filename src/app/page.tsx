@@ -1,5 +1,6 @@
 import { LinkWidget } from '@/app/ui/widgets/LinkWidget';
 import { ClockWidget } from './ui/widgets/ClockWidget';
+import { TodoWidget } from './ui/widgets/TodoWidget/TodoWidget';
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
           image='https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png'
           url='https://instagram.com'
         />
+
+        <TodoWidget />
 
         <LinkWidget
           title='gmail'

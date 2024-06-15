@@ -1,5 +1,5 @@
 'use client';
-import { Widget, WidgetProps } from '../../primitives/Widget';
+import { Widget, WidgetProps } from '../../primitives';
 import { Clock } from './Clock';
 import { toggleFullScreen } from '@/app/utils/utils';
 

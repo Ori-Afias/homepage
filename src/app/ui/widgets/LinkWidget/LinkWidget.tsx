@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Widget, WidgetProps } from '../../primitives/Widget';
+import { Widget, WidgetProps } from '../../primitives';
 
 interface LinkWidgetProps extends WidgetProps {
   url: string;

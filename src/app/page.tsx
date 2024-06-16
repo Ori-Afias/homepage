@@ -5,7 +5,7 @@ import { TodoWidget } from './ui/widgets/TodoWidget/TodoWidget';
 export default function Home() {
   return (
     <main className='flex items-center justify-center min-h-screen min-w-full overflow-clip p-8 md:p-28'>
-      <div className='grid grid-flow-dense grid-cols-12 gap-16'>
+      <div className='grid grid-flow-dense grid-cols-2 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 2xl:grid-cols-12 gap-16'>
         <LinkWidget
           title='gmail'
           image='https://images.indianexpress.com/2022/01/Gmail.jpg'
@@ -19,7 +19,7 @@ export default function Home() {
           tiles={[2, 2]}
         />
 
-        <ClockWidget tiles={[4, 4]} />
+        <ClockWidget tiles={[3, 3]} />
 
         <LinkWidget
           title='instagram'

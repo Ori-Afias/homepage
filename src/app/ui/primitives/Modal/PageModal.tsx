@@ -8,11 +8,20 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
+const customTheme: CustomFlowbiteTheme['modal'] = {
+  content: {
+    inner: 'relative flex max-h-[90dvh] flex-col rounded-lg bg-white shadow dark:bg-gray-700 overflow-hidden',
+  },
+  body: {
+    base: 'flex-1 overflow-auto p-0',
+  },
+};
+
 export function PageModal({ children }: ModalProps) {
   const { back } = useRouter();
 
   return (
-    <FlowBiteModal show onClose={back} dismissible size='7xl'>
+    <FlowBiteModal theme={customTheme} show onClose={back} dismissible size='7xl'>
       <FlowBiteModal.Body>{children}</FlowBiteModal.Body>
     </FlowBiteModal>
   );

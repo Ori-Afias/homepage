@@ -29,6 +29,9 @@ const config: Config = {
     extend: {
       height: dimensions,
       width: dimensions,
+      animation: {
+        'bounce-once': 'bounce 300ms ease-in-out 1.5',
+      },
     },
   },
   safelist: safelist,

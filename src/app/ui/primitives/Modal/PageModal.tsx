@@ -10,6 +10,7 @@ interface ModalProps {
 
 const customTheme: CustomFlowbiteTheme['modal'] = {
   content: {
+    base: 'relative h-full w-full p-4 md:h-auto animate-bounce-once',
     inner: 'relative flex max-h-[90dvh] flex-col rounded-lg bg-white shadow dark:bg-gray-700 overflow-hidden',
   },
   body: {

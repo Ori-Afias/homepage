@@ -9,7 +9,7 @@ interface LinkWidgetProps extends WidgetProps {
 export function LinkWidget({ url, image, ...rest }: LinkWidgetProps) {
   return (
     <Widget {...rest}>
-      <Link href={url} target='_blank'>
+      <Link href={url} target='_blank' prefetch={false}>
         <div className='h-full w-full bg-cover bg-center bg-no-repeat' style={{ backgroundImage: `url(${image})` }} />
       </Link>
     </Widget>

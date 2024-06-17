@@ -19,7 +19,7 @@ export default function Home() {
           tiles={[2, 2]}
         />
 
-        <ClockWidget tiles={[3, 3]} />
+        {/* <ClockWidget tiles={[3, 3]} /> */}
 
         <LinkWidget
           title='instagram'

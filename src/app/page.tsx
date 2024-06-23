@@ -4,7 +4,7 @@ import { TrashCanWidget } from './ui/widgets/TrashCan/TrashCanWidget';
 export const revalidate = 0;
 
 export default async function Home() {
-  const res = await fetch(`http://localhost:3000/api/widgets`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/widgets`);
   const data = await res.json();
   const widgets = data.data as IWidget[];
 
